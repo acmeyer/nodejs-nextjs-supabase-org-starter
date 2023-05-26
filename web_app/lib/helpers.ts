@@ -16,3 +16,7 @@ export const fetcher = async ([url, accessToken]: [string, string]): Promise<any
   });
   return response.json();
 };
+
+export const classNames = (...classes: any[]) => {
+  return classes.filter(Boolean).join(' ');
+}
